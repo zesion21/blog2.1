@@ -1,0 +1,16 @@
+<div class="itemBox">
+  <h3 (click)="jump2Detail(articleItem.id)">{{ articleItem.title }}</h3>
+  <div class="description">{{ articleItem.description }}</div>
+  <div class="footer">
+    <span>
+      <i nz-icon nzType="clock-circle" nzTheme="outline"></i
+      >{{ articleItem.time }}
+    </span>
+    <span>
+      <i nz-icon nzType="tag" nzTheme="outline"></i>{{ articleItem.tag }}
+    </span>
+    <span>
+      <i nz-icon nzType="eye" nzTheme="outline"></i>{{ articleItem.see }}
+    </span>
+  </div>
+</div>

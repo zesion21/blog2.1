@@ -1,0 +1,52 @@
+<header>
+  <ul id="nav">
+    <li>
+      <a href="" routerLink="../main">首页</a>
+    </li>
+    <li>
+      <a href="" routerLink="../main/article">文章</a>
+      <ul>
+        <li>
+          <a href="" routerLink="../main/article/PHP">PHP</a>
+        </li>
+        <li>
+          <a href="" routerLink="../main/article/js">JavaScript</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="" routerLink="../main/about">关于</a>
+    </li>
+    <!-- <li>
+      <a href="" routerLink="/main">合作</a>
+    </li> -->
+    <li>
+      <a href="" (click)="preventA($event)">工具</a>
+      <ul>
+        <li>
+          <a href="" routerLink="../main/tool/mapTool" (click)="jumpReload()"
+            >地图工具</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            (click)="
+              preventA(
+                $event,
+                'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference'
+              )
+            "
+            >javaScript手册</a
+          >
+        </li>
+        <li>
+          <a href="" (click)="preventA($event, 'https://github.com/Esri')"
+            >github/esri</a
+          >
+        </li>
+      </ul>
+    </li>
+    <div style="clear: both; width: 0"></div>
+  </ul>
+</header>

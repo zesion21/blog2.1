@@ -1,0 +1,36 @@
+.itemBox {
+  border-bottom: 1px solid #f0f0f0;
+  width: 96%;
+  margin: auto;
+  padding: 6px 0;
+
+  h3 {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.4s;
+  }
+  .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #999;
+    margin-bottom: 2px;
+  }
+  .footer {
+    span {
+      margin-right: 10px;
+      i {
+        margin-right: 2px;
+      }
+    }
+  }
+}
+.itemBox:hover {
+  h3 {
+    color: #4497e6;
+    cursor: pointer;
+  }
+}
