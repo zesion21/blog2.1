@@ -1,9 +1,8 @@
 <div class="mainBox">
   <app-header [(showRoutr)]="showRoutr"></app-header>
-  <div *ngIf="routerUrl">hello</div>
-  <div id="bodyBox">
+  <div *ngIf="routerUrl.includes('article')">hello</div>
+  <div class="bodyBox" [ngClass]="{ ifMap: ifMap }">
     <router-outlet *ngIf="showRoutr"></router-outlet>
   </div>
-
   <app-footer></app-footer>
 </div>

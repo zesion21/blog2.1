@@ -9,11 +9,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'zesion-lee';
   constructor(private http: HttpClient) {}
-  ngOnInit(): void {
-    this.http
-      .get('http://127.0.0.1:3600/api/getTagList.php')
-      .subscribe(({ code, data }: any) => {
-        console.log(data);
-      });
-  }
+  ngOnInit(): void {}
 }

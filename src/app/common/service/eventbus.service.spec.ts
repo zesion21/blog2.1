@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RouterService } from './router.service';
+import { EventbusService } from './eventbus.service';
 
-describe('RouterService', () => {
-  let service: RouterService;
+describe('EventbusService', () => {
+  let service: EventbusService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RouterService);
+    service = TestBed.inject(EventbusService);
   });
 
   it('should be created', () => {

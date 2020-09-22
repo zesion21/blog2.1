@@ -16,7 +16,15 @@ import {
   EyeOutline,
   ClockCircleOutline,
   TagOutline,
+  MailOutline,
+  AppstoreOutline,
+  SettingOutline,
+  EnvironmentOutline,
+  DoubleRightOutline,
+  DoubleLeftOutline,
+  CloseOutline,
 } from '@ant-design/icons-angular/icons';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 const icons = [
   AccountBookFill,
@@ -25,6 +33,13 @@ const icons = [
   EyeOutline,
   ClockCircleOutline,
   TagOutline,
+  MailOutline,
+  CloseOutline,
+  AppstoreOutline,
+  SettingOutline,
+  EnvironmentOutline,
+  DoubleRightOutline,
+  DoubleLeftOutline,
 ];
 @NgModule({
   declarations: [
@@ -38,6 +53,7 @@ const icons = [
     NzPaginationModule,
     RouterModule,
     NzIconModule.forRoot(icons),
+    NzSelectModule,
   ],
   exports: [
     NzPaginationModule,
@@ -45,6 +61,7 @@ const icons = [
     ArticleItemComponent,
     FooterComponent,
     NzIconModule,
+    NzSelectModule,
   ],
 })
 export class PublicComponentModule {}

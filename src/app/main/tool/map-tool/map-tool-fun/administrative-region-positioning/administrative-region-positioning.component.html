@@ -1,0 +1,40 @@
+<div id="boxArl">
+  <ul>
+    <li>
+      一级行政区：<nz-select
+        [(ngModel)]="selectProvince"
+        (ngModelChange)="provinceChange($event)"
+      >
+        <nz-option
+          [nzValue]="item.adcode"
+          [nzLabel]="item.name"
+          *ngFor="let item of provinceList"
+        ></nz-option>
+      </nz-select>
+    </li>
+    <li *ngIf="cityList.length > 0">
+      二级行政区：<nz-select
+        [(ngModel)]="selectCity"
+        (ngModelChange)="cityChange($event)"
+      >
+        <nz-option
+          [nzValue]="item.adcode"
+          [nzLabel]="item.name"
+          *ngFor="let item of cityList"
+        ></nz-option>
+      </nz-select>
+    </li>
+    <li *ngIf="districtList.length > 0">
+      三级行政区：<nz-select
+        [(ngModel)]="selectdistrict"
+        (ngModelChange)="districtChange($event)"
+      >
+        <nz-option
+          [nzValue]="item.adcode"
+          [nzLabel]="item.name"
+          *ngFor="let item of districtList"
+        ></nz-option>
+      </nz-select>
+    </li>
+  </ul>
+</div>

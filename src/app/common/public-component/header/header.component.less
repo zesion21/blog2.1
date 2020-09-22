@@ -2,6 +2,9 @@ header {
   height: 60px;
   background-color: rgba(0, 0, 0, 0.7);
   padding-top: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
 
   ul {
     max-width: 1360px;
@@ -47,4 +50,9 @@ header {
       transform: rotateY(0deg);
     }
   }
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
 }

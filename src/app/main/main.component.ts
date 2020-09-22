@@ -8,11 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./main.component.less'],
 })
 export class MainComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(public router: Router) {}
   showRoutr: boolean = true;
   ngOnInit(): void {}
   get routerUrl() {
-    const arr = ['/main/articleDetail'];
-    return arr.some((item) => this.router.url.includes(item));
+    return this.router.url;
+  }
+  get ifMap() {
+    return this.routerUrl.includes('mapTool');
   }
 }
