@@ -22,9 +22,12 @@ export class AdministrativeRegionPositioningComponent implements OnInit {
   selectdistrict: any;
 
   provinceChange(code) {
+    this.cityList = [];
+    this.districtList = [];
     this.getListByKeyword(code, 'cityList');
   }
   cityChange(code) {
+    this.selectdistrict = undefined;
     this.getListByKeyword(code, 'districtList');
   }
   districtChange(code) {

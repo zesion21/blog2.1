@@ -8,6 +8,13 @@ export class EsriService {
   constructor(private url: UrlService) {}
   //实例
   map: any;
+  _mapEventName = '';
+  get mapEventName() {
+    return this._mapEventName;
+  }
+  set mapEventName(val) {
+    this._mapEventName = val;
+  }
 
   //API
   Map: any;
