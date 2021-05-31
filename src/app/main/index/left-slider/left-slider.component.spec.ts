@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LeftSliderComponent } from './left-slider.component';
 
@@ -6,7 +6,7 @@ describe('LeftSliderComponent', () => {
   let component: LeftSliderComponent;
   let fixture: ComponentFixture<LeftSliderComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ LeftSliderComponent ]
     })
