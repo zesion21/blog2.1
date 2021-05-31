@@ -3,15 +3,19 @@
     <li>
       <a href="" routerLink="../main">首页</a>
     </li>
-    <li>
-      <a href="" routerLink="../main/article">文章</a>
+    <li *ngFor="let menu1 of meneList">
+      <a href="" routerLink="../main/article/{{ menu1.cate_ID }}">{{
+        menu1.cate_Name
+      }}</a>
       <ul>
-        <li>
-          <a href="" routerLink="../main/article/PHP">PHP</a>
+        <li *ngFor="let menu2 of menu1['child']">
+          <a href="" [routerLink]="'../main/article/' + menu2['cate_ID']">{{
+            menu2.cate_Name
+          }}</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="" routerLink="../main/article/js">JavaScript</a>
-        </li>
+        </li> -->
       </ul>
     </li>
     <li>
